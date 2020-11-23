@@ -1,7 +1,7 @@
 module System.Console.Haskeline.Command(
                         -- * Commands
                         Effect(..),
-                        KeyMap(..), 
+                        KeyMap(..),
                         CmdM(..),
                         Command,
                         KeyCommand,
@@ -29,7 +29,6 @@ module System.Console.Haskeline.Command(
                         ) where
 
 import Data.Char(isPrint)
-import Control.Applicative(Applicative(..))
 import Control.Monad(ap, mplus, liftM)
 import Control.Monad.Trans.Class
 import System.Console.Haskeline.LineState
